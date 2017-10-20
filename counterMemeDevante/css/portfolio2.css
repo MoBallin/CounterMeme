@@ -1,0 +1,45 @@
+.container {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        h3 {
+            text-align: center;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+        
+        hr {
+            border: ridge;
+        }
+        
+        .container {
+            margin-top: 15px;
+        }
+        
+        .grayFont {
+            color: grey;
+        }
+        
+        #grad {
+            background: #000000;
+            /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(#FFFFFF, #f5964f);
+        }
+
+        .row {
+            vertical-align: text-bottom;
+        }
+
+        .multipleItems {
+            margin-left: -29px;
+        }
+
+        .centerButton {
+            align-content: center;
+            text-align: center;
+        }

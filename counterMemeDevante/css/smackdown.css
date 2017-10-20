@@ -1,0 +1,111 @@
+.orange {
+    color: orange;
+}
+
+#orangeSide {
+    color: orange;
+}
+
+.orangeBG {
+    background-color: orange;
+}
+
+.grayBG {
+    background-color: lightgray;
+}
+
+.mainPic {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#graySideMainImage, #orangeSideMainImage {
+    padding: 10px;
+    margin: auto;
+    display: block;
+}
+
+table {
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+    border: 2px solid black;   
+}
+
+th {
+    text-align: center;
+    font-size: 30pt;
+    border: 2px solid black;
+}
+
+
+img {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.memeImg {
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.memeImg:hover {
+    opacity: 0.8;
+}
+
+/* The Image Modal (background) */
+#imageModal {
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+@media (min-width: 779px) {
+    #imageModal .modal-dialog{
+        top: 25%;
+    }
+}
+div {
+    text-align: center;
+}
+
+.deployedMeme {
+    border-radius: 25px;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 2px 2px 5px gray;
+    height: 180px;
+    min-width: 310px;
+}
+
+.likeStats {
+    text-align: right;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.likeStatsReverse {
+    text-align: left;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.counterSpace {
+    margin-bottom: 60px;
+}
+
+@media (min-width: 779px) {
+    .counterSpace {
+        margin-bottom: 60px;
+    }
+}
