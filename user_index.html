@@ -39,6 +39,16 @@
 				margin-bottom: 10px;
 				color:orange;
 			}
+			#aboveNav i {
+				display: inline-block;
+				float: right;
+				text-align: right;
+				margin-left: 100px;
+				font-size: 30px;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				color: dimgray;
+			}
 			#customNav {
 				background-color: orange;
 				color: white;
@@ -62,14 +72,10 @@
 				text-transform: uppercase;
 			}
 			
-			.nav-item {
-				
-				margin-right: 70px;
-				font-size: 1.1em;
-			}
+			
 			.nav-link {
 				color: white;
-				margin-right: 70px;
+				margin-right: 60px;
 				font-size: 1.1em;
 			}
 			.nav-link:hover {
@@ -79,7 +85,7 @@
 			
 			.nav {
 				
-				margin-left: 49px;
+				margin-left: 41px;
 			}
 			
 			#custLi {
@@ -93,6 +99,7 @@
 			.dropdown > li > a{
 				color: white;
 			}
+/*
 			 .menu .nav-pills .dropdown .open .dropdown-toggle{
     			background-color: red;
 				}
@@ -100,6 +107,7 @@
     			background-color: orange;
     			background-image: none;
 			}
+*/
 			
 		</style>
     </head>
@@ -107,7 +115,11 @@
     <body>
 		<div id="aboveNav" >
 			<h1>Counter<span>Meme</span></h1> <p>Express What You Meme!</p>
+			
+		<!-- USER'S NAME HAS TO BE LESS THAN 20 CHARACTERS FOR NOW, OTHERWISE IT MESSES WITH SPACING-->
+			<i>Welcome, {{USER}} </i>
 		</div>
+		
 		<nav id="customNav" class="navbar navbar-expand-lg navbar-light">
 			
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -120,16 +132,16 @@
 					<a id="custLi" class="nav-link" href="#">How It Works<span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
+					<a id="custLi" class="nav-link" href="#">Portfolio</a>
+				</li>
+				<li class="nav-item">
 					<a id="custLi" class="nav-link" href="#">Browse Smackdowns</a>
 				</li>
-				<li class="nav-item dropdown">
-					<a id=" navbarDropdown" class="nav-link dropdown-toggle" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Login
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Login</a>
-							<a class="dropdown-item" href="#">Create An Account</a>
-					</div>
+				<li class="nav-item">
+					<a id="custLi" class="nav-link" href="#">Create</a>
+				</li>
+				<li class="nav-item">
+					<a id="custLi" class="nav-link" href="#">Logout</a>
 				</li>
 			</ul>
 		<form class="form-inline my-2 my-lg-0">
