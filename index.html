@@ -55,63 +55,80 @@
 		<ul class="nav navbar-nav">
 		  <li id="nav-li" class="active"><a href="./howItWorks">How It Works</a></li>
 		  <li id="nav-li"><a href="#">Browse Smackdowns</a></li>
-		  <li id="nav-li"><a href="#">Ranks</a></li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
 		  	<li id="login-li">
-			  <button id="signUp"type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
-			  	<a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
-			  </button> 
-		<div class="modal fade" id="myModal" role="dialog">
-			<div class="modal-dialog">
-			  <!-- Modal content-->
-			  <div class="modal-content">
-				<div class="modal-header">
-				  <button type="button" class="close" data-dismiss="modal">&times;</button>
-				  <h4 class="modal-title">Modal Header</h4>
+				<button id="loginBtn"type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+					<a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+				</button> 
+				
+				<!-- start of Modal for Log-In -->
+				<div class="modal fade" id="myModal" role="dialog">
+					<div class="modal-dialog">
+					  <!-- Modal content-->
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <button type="button" class="close" data-dismiss="modal">&times;</button>
+						  <h4 style="color: #3498db;" class="modal-title">Please Log-In</h4>
+						</div>
+						<div class="modal-body">
+
+							<!-- start of form -->
+							  <form id="loginBody" method="post" action="index.html">
+								<div class="box">
+									<h1 style="color: orange;">Counter<span style="color: #cacdce">Meme</span> Login</h1>
+									<input type="email" name="email" placeholder="Username" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="nameSpace" />
+
+									<input type="password" name="password" placeholder="Password" onFocus="field_focus(this, 'password');" onblur="field_blur(this, 'password');" class="nameSpace" />
+
+									<div id="btn1"><a href="#">Sign In</a></div> <!-- End Btn -->
+								</div> <!-- End Box -->
+							</form>
+
+							<p>Forgot your password? <u style="color:#f1c40f;">Click Here!</u></p>
+
+
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					  </div>
+					</div>
 				</div>
-				<div class="modal-body">
-					
-					<!-- start of form -->
-					  <form id="loginBody" method="post" action="index.html">
-						<div class="box">
-							<h1>Dashboard</h1>
-							<input type="email" name="email" value="email" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
-
-							<input type="password" name="email" value="email" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
-
-							<div id="btn1"><a id="" href="#">Sign In</a></div> <!-- End Btn -->
-						</div> <!-- End Box -->
-					</form>
-
-					<p>Forgot your password? <u style="color:#f1c40f;">Click Here!</u></p>
-  
-					
-				</div>
-				<div class="modal-footer">
-				  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				</div>
-			  </div>
-
-			</div>
-  	</div>
   
 			</li>
 			  
 			<li id="login-li">
-				<button id="loginBtn"type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">
-					<a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a>
-			  </button> 
+				
+				<button id="signUp"type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">
+			  		<a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+			  	</button> 
 				<div class="modal fade" id="myModal2" role="dialog">
 					<div class="modal-dialog">
 					  <!-- Modal content-->
 						  <div class="modal-content">
 								<div class="modal-header">
 								  <button type="button" class="close" data-dismiss="modal">&times;</button>
-								  <h4 class="modal-title">Login!</h4>
+								  <h4 style="color: #3498db;" class="modal-title">Sign Up!</h4>
 								</div>
 								<div class="modal-body">
-								  <p>LOGIN FORM HERE</p>
+								  <form id="loginBody" method="post" action="index.html">
+									<div class="box">
+										<h1 style="color: orange;">Create Counter<span style="color: #cacdce">Meme</span> Account</h1>
+										
+										<input type="fname" name="fname" placeholder="First Name" onFocus="field_focus(this, 'fname');" onblur="field_blur(this, 'fname');" class="nameSpace2" />
+										
+										<input type="lname" name="lname" placeholder="Last Name" onFocus="field_focus(this, 'lname');" onblur="field_blur(this, 'lname');" class="nameSpace2" />
+										
+										<input type="username" name="username" placeholder="Username" onFocus="field_focus(this, 'username');" onblur="field_blur(this, 'username');" class="nameSpace2" />
+
+										<input type="password" name="password" placeholder="Password" onFocus="field_focus(this, 'password');" onblur="field_blur(this, 'password');" class="nameSpace2" />
+										
+										<input type="confirmedPass" name="confirmedPass" placeholder=" Confrim Password" onFocus="field_focus(this, 'confirmedPass');" onblur="field_blur(this, 'confirmedPass');" class="nameSpace2" />
+
+									<div id="btn2"><a href="#">Create Account!</a></div> <!-- End Btn -->
+								</div> <!-- End Box -->
+							</form>
 								</div>
 								<div class="modal-footer">
 								  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
