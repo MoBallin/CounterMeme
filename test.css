@@ -1,0 +1,19 @@
+.meme.memeCarousel{
+	overflow:hidden;
+	position:relative;
+	width:100%;
+	height:400px;
+	-webkit-perspective:500px;
+	perspective:500px;
+	-webkit-transform-style:preserve-3d;
+	transform-style:preserve-3d;
+	-webkit-transform-origin:0% 50%;
+	transform-origin:0% 50%}..memeCarousel..memeCarousel-slider{top:0;left:0}..memeCarousel..memeCarousel-slider ..memeCarousel-fixed-item{position:absolute;
+		left:0;right:0;
+		bottom:20px;
+		z-index:1}..memeCarousel..memeCarousel-slider ..memeCarousel-fixed-item.with-indicators{bottom:68px}..memeCarousel..memeCarousel-slider ..memeCarousel-item{width:100%;
+			height:100%;
+			min-height:400px;
+			position:absolute;
+			top:0;
+			left:0}..memeCarousel..memeCarousel-slider ..memeCarousel-item h2{font-size:24px;font-weight:500;line-height:32px}..memeCarousel..memeCarousel-slider ..memeCarousel-item p{font-size:15px}..memeCarousel ..memeCarousel-item{display:none;width:200px;height:200px;position:absolute;top:0;left:0}..memeCarousel ..memeCarousel-item>img{width:100%}..memeCarousel .indicators{position:absolute;text-align:center;left:0;right:0;bottom:0;margin:0}..memeCarousel .indicators .indicator-item{display:inline-block;position:relative;cursor:pointer;height:8px;width:8px;margin:24px 4px;background-color:rgba(255,255,255,0.5);-webkit-transition:background-color .3s;transition:background-color .3s;border-radius:50%}..memeCarousel .indicators .indicator-item.active{background-color:#fff}..memeCarousel.scrolling ..memeCarousel-item .materialboxed,..memeCarousel ..memeCarousel-item:not(.active)

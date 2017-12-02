@@ -1,0 +1,75 @@
+{"carousels": [
+		{
+			"pictures" : [
+				{
+					"myH1": "Creme De La Meme",
+					"uname":"Barot Bellingham",
+					"shortname":"trumpHillary",
+					"href":"#one!"
+					
+				  },
+				  {
+					"uname":"Barot Bellingham",
+					"shortname":"dcVMarvel",
+					"href":"#one!"
+				  },
+				  {
+					"uname":"Jonathan G. Ferrar II",
+					"shortname":"codVBatt",
+					"href":"#two!"
+				  },
+				  {
+					"uname":"Hillary Hewitt Goldwynn-Post",
+					"shortname":"ps4Xbox",
+					"href":"#three!"
+				  },
+				  {
+					"uname":"Hassum Harrod",
+					"shortname":"nikeVadidas",
+					"href":"#four!"
+				  },
+				  {
+					"uname":"Jennifer Jerome",
+					"shortname":"kcVstl",
+					"href":"#five!"
+				  }
+				]
+		},
+		{
+			"pictures" : [
+				
+				  {
+					"uname":"Barot Bellingham",
+					"shortname":"dominosVpj",
+					"href":"#one!",
+					"myH1":"Most Heated"
+				  },
+				  {
+					"uname":"Barot Bellingham",
+					"shortname":"pepVcoke",
+					"href":"#one!"
+				  },
+					{
+					"uname":"Barot Bellingham",
+					"shortname":"patVfalc",
+					"href":"#one!"
+				  },
+					{
+					"uname":"Barot Bellingham",
+					"shortname":"weedVAlc",
+					"href":"#one!"
+				  },
+					{
+					"uname":"Barot Bellingham",
+					"shortname":"bongsBlunts",
+					"href":"#one!"
+				  },
+					{
+					"uname":"Barot Bellingham",
+					"shortname":"codVBatt",
+					"href":"#one!"
+				  }
+				]
+		}
+	]
+}

@@ -1,4 +1,4 @@
-	#navbar-top a {
+#navbar-top a {
 		margin-top: 10px;
 		margin-left: 60px;
 		background-color: white;
@@ -41,7 +41,38 @@
 		border: none;
 		background-color: orange;
 	}
+	#nav-li button {
+		font-size: 18px;
+		color: white;
+		border: 1px solid orange;
+		background-color: orange;
+		border-radius: 10%;
+		margin-left: 90px;
+		margin-top: 7px;
+	}
 
+	#nav-li button a {
+		font-size: 18px;
+		color: white;
+		border: 1px solid orange;
+		background-color: orange;
+		margin-top: 7px;
+	}
+	#nav-li button:hover {
+		font-size: 19px;
+		color: #cacdce;
+		border: 1px solid orange;
+		border-radius: 10%;
+	}
+	.dropdown-menu {
+		background-color: orange;
+		
+	}
+	#dropdown-li {
+		background-color: orange;
+		border-radius: 0%;
+		margin-left: 0px;
+	}
 	#nav-li a {
 		border: 1px solid orange;
 		border-radius: 10%;
@@ -132,6 +163,7 @@
 		border: none;
 	}
 
+	
 /* Start of CSS for Login */
 #loginBody {
   font-family: 'Open Sans', sans-serif;
@@ -197,16 +229,16 @@
 }
 
 /*For Button On Log-In and Sign Up */
-#loginBody #btn1 a{
+#loginBody #btn1 {
   background:#2ecc71;
   width:150px;
-  padding-top:5px;
-  padding-bottom:5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   color:white;
   border-radius:4px;
   border: #11E257 1px solid;
   text-decoration: none;
-  margin-top:20px;
+  margin-top: 20px;
   margin-bottom:20px;
   float:left;
   margin-left:72px;
@@ -218,7 +250,7 @@
   background:#2CC06B; 
 }
 
- #loginBody #btn2 a{
+ #loginBody #btn2 {
   float:left;
   background:#11E257;
   width:135px;
@@ -228,7 +260,7 @@
   border-radius:4px;
   border: #11E257 1px solid;
   
-  text-decoration: none;	 
+  text-decoration:;	 
   margin-top:20px;
   margin-bottom:20px;
   margin-left:76px;

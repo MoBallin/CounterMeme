@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Counter Meme</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="smackdown.css">
+		
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!--		<script src="smackdown.js"></script>-->
+        
+        <script>
+            // Preview image before upload
+            function readURL(input, name){
+                if(input.files && input.files[0]){
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                        $(name).attr('src',e.target.result);
+                    }
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+        </script>
+        
+        <style> 
+			.container {
+				border: 1px solid black;
+				max-width: 80%;
+			}
+			
+			.left-side input[type=text] {
+				width: 60%;
+			}
+         
+        </style>
+    </head>
+    <body>
+        
+        <div class="container">
+            <h1 class="text-center">Create a <span class="orangeSide">Smackdown</span></h1>
+            <div class="row">
+                <div class="col-lg-6 ">
+                    <form class="left-side">
+                        <div class="form-group">
+                            <label for="title">Smackdown title:</label>
+                            <input type="text" class="form-control input-sm" id="title">
+                        </div>
+						<div class="form-group">
+                            <label for="tags">Category</label>
+                            <input type="text" class="form-control input-sm" id="tags">
+                        </div>
+                        <div class="form-group">
+                            <label for="tags">Optional tags:</label>
+                            <input type="text" class="form-control input-sm" id="tags">
+                        </div>
+						
+						
+                        <div id="mainPicDiv" class="form-group">
+                            <label for="mainPicture">Smackdown main picture:</label>
+							<div id="mainPic"><img class="mainPic img-thumbnail" src="#" alt="Main Pic"/></div>
+                            <input onchange="readURL(this, '.mainPic')" type="file" id="mainPicture">
+                            
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-4 ">
+				
+                    <form class="form-horizontal">
+						
+						<!-- Grey Side -->
+                        <div class="form-group greySide">
+                            <label  class="control-label col-lg-4" for="greyContender">Grey contender:</label>
+                            <div class="col-lg-9">
+                                <input type="text" class="form-control">
+                            	<div id="greyContender"><img class="upImage1 img-thumbnail"  src="#" alt="Grey Preview"/></div>
+                                <label class="sr-only" for="greyPicture">Picture for grey contender:</label>
+                                <input onchange="readURL(this, '.upImage1');" type="file" id="greyPicture">
+                                
+                            </div>
+                        </div>
+						
+						<!-- Orange Side -->
+                        <div class="form-group orangeSide">
+                            <label class=" control-label col-lg-4" for="orangeContender">Orange contender:</label>
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control">
+                                <div id="orangeContender"><img class="upImage2 img-thumbnail" src="#" alt="Orange Preview"/></div>
+                                <label class="sr-only" for="orangePicture">Picture for orange contender:</label>
+                                 <input onchange="readURL(this, '.upImage2');" type="file" id="greyPicture">
+                                
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-12">
+                    <input id="finishNcreate" type="submit" class="btn btn-info" value="Finish and Create">
+                </div>    
+            </div>
+        </div>
+    </body>
+</html>

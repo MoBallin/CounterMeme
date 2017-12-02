@@ -1,0 +1,84 @@
+/*
+.btn-file {
+    position: absolute;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+*/
+
+#img-upload{
+	border-style: hidden;
+    height: 150px;
+	width: 300px;
+}
+
+#smackdownContainer {
+	width: 80%
+}
+
+.greySide { 
+	color: grey;
+}
+.greySide input[type=text] {
+	width: 176%;
+}
+#greyContender .img-thumbnail {
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	min-height: 200px;
+	min-width: 350px;
+	height: 200px;
+	width: 350px;
+}
+.orangeSide {
+	color: orange;
+	margin-top: 5px;
+}
+.orangeSide input[type=text] {
+	width: 176%;
+}
+#orangeContender .img-thumbnail{
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	min-height: 200px;
+	min-width: 350px;
+	height: 200px;
+	width: 350px;
+}
+
+#mainPicDiv {
+	margin-top: 50px;
+}
+#mainPic .img-thumbnail{
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	min-height: 200px;
+	min-width: 350px;
+	height: 200px;
+	width: 350px;
+}
+
+#finishNcreate {
+	margin-top: 70px; 
+	margin-bottom: 70px;
+}
+.rightSide {
+	margin-right: 50px;
+}
